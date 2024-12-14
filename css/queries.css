@@ -89,6 +89,11 @@ REM AND EM do not depend on html font-size in media quetities
     font-size: 50%;
   }
 
+  .features-logos {
+    gap: 1.7rem;
+    row-gap: 0;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     padding: 0 8rem;
@@ -191,7 +196,8 @@ REM AND EM do not depend on html font-size in media quetities
     display: block;
   }
   .main-nav {
-    background-color: #;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
     position: absolute;
     top: 0;
     left: 0;
@@ -269,6 +275,10 @@ REM AND EM do not depend on html font-size in media quetities
   .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .features-logos img {
+    height: 4rem;
+  }
 }
 
 /* BELOW 579px (mobiles) */
@@ -295,10 +305,6 @@ REM AND EM do not depend on html font-size in media quetities
 
   .feature--logo-scroll img {
     margin: 0.7rem 0;
-  }
-  .section-features,
-  .features-logos {
-    height: 36px;
   }
 
   .pricing-section,
@@ -364,5 +370,14 @@ REM AND EM do not depend on html font-size in media quetities
   }
   .contact a {
     font-size: 1.4rem;
+  }
+
+  .features-logos {
+    column-gap: 2rem;
+    row-gap: 0;
+  }
+
+  .features-logos img {
+    height: 2.4rem;
   }
 }
