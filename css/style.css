@@ -76,7 +76,7 @@
   border: none;
   height: 4.8rem;
   width: 4.8rem;
-  color: #333;
+  color: #e59999;
 }
 
 .icon-mobile-nav:focus {
@@ -407,7 +407,7 @@
 }
 
 .testimonials-imageSection {
-  background-image: url("../images/pic-card-1.jpg");
+  background-image: url("../img/testimonilas.jpeg");
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -429,6 +429,7 @@
 }
 
 .testimonial-text {
+  color: wheat;
   font-size: 1.8rem;
   line-height: 1.8;
   margin-bottom: 1.6rem;
@@ -619,7 +620,7 @@
       rgba(31, 19, 101, 0.351),
       rgba(37, 28, 83, 0.384)
     ),
-    url("../img/course/ahmed.jpg");
+    url("../img/cta-pic.jpeg");
   background-position: center;
 }
 
@@ -663,11 +664,11 @@
 }
 
 .btn--form {
-  background-color: #555;
+  background-color: #e59999;
   color: #fff;
   align-self: flex-end;
   padding: 1.2rem;
-  transition: all 0.4s;
+  transition: all 0.6s;
 }
 
 .btn--form:hover {
@@ -698,14 +699,14 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 3.2rem;
-  color: #1f1365;
+  color: #e59999;
 }
 
 .footer-icon {
   width: 2.4rem;
-  transition: all 0.3s;
+  transition: all 0.6s;
   height: 2.4rem;
-  color: #c5c1dc;
+  color: #e59999;
   display: block;
 }
 
@@ -761,7 +762,7 @@
 
 .footer-icon:hover,
 .footer-icon:active {
-  color: #1f1365;
+  color: #e5999980;
 }
 
 .cookie-message {
