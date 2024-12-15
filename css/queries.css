@@ -246,10 +246,10 @@ REM AND EM do not depend on html font-size in media quetities
     margin-bottom: 4.8rem;
   }
 
-  .pricing-plan-card.pricing-plan--starter {
+  .pricing-plan.pricing-plan--starter {
     width: 100%;
   }
-  .pricing-plan-card.pricing-plan--complete {
+  .pricing-plan.pricing-plan--complete {
     width: 100%;
   }
 
@@ -313,7 +313,7 @@ REM AND EM do not depend on html font-size in media quetities
   }
 
   .courses-card {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
   }
 
