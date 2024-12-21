@@ -198,7 +198,7 @@ REM AND EM do not depend on html font-size in media quetities
   .main-nav {
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;

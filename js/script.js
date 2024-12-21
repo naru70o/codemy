@@ -7,6 +7,10 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
+btnNavEl.addEventListener("touchstart", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
 // Cta
 const scrollTocta = document.querySelector(".scroll-clicker--cta");
 scrollTocta.addEventListener("click", function (e) {
@@ -54,8 +58,8 @@ mainnav.addEventListener("click", function (e) {
   if (!e.target.classList.contains("main-nav-links")) return;
 
   const section = document.getElementById(`section--${src}`);
-  console.log(section);
   section.scrollIntoView({ behavior: "smooth" });
+  headerEl.classList.remove("nav-open");
 });
 
 // ///////////////////////////////////////////////////////////
@@ -86,7 +90,7 @@ const obs = new IntersectionObserver(
 obs.observe(sectionHeroEl);
 
 const date = new Date();
-const year = date.getFullYear;
+const year = date.getFullYear();
 document.querySelector(
   ".copy-text"
 ).textContent = `©Codemy ${year} the best way to learn code`;
