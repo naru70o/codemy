@@ -7,9 +7,41 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-const btnOUutline = document.querySelector(".btn--outline");
-btnOUutline.addEventListener("click", function (e) {
-  e.scrollIntoView({ behavior: "smooth" });
+// Cta
+const scrollTocta = document.querySelector(".scroll-clicker--cta");
+scrollTocta.addEventListener("click", function (e) {
+  e.preventDefault();
+  const link = e.target;
+  const src = link.dataset.src;
+  console.log(src);
+
+  if (!e.target.classList.contains("atr-clicker")) return;
+  const section = document.getElementById(`section--${src}`);
+  section.scrollIntoView({ behavior: "smooth" });
+});
+// Cta
+const scrollTolearn = document.querySelector(".scroll-clicker--learn");
+scrollTolearn.addEventListener("click", function (e) {
+  e.preventDefault();
+  const link = e.target;
+  const src = link.dataset.src;
+  console.log(src);
+
+  if (!e.target.classList.contains("atr-clicker")) return;
+  const section = document.getElementById(`section--${src}`);
+  section.scrollIntoView({ behavior: "smooth" });
+});
+// Pricing
+const scrollToPrice = document.querySelector(".scroll-clicker--Pricing");
+scrollToPrice.addEventListener("click", function (e) {
+  e.preventDefault();
+  const link = e.target;
+  const src = link.dataset.src;
+  console.log(src);
+
+  if (!e.target.classList.contains("atr-clicker")) return;
+  const section = document.getElementById(`section--${src}`);
+  section.scrollIntoView({ behavior: "smooth" });
 });
 
 const mainnav = document.querySelector(".main-nav-link");
@@ -53,12 +85,8 @@ const obs = new IntersectionObserver(
 );
 obs.observe(sectionHeroEl);
 
-//coockie message
-const header = document.querySelector(".header");
-const message = document.createElement("div");
-message.classList.add("cookie-message");
-message.innerHTML = `start your career and be sucussfull <a class="arrow-link" href="#" data-src="5">&rarr;</a>`;
-
-// const messageDelay = setTimeout(() => {
-//   header.prepend(message);
-// }, 3000);
+const date = new Date();
+const year = date.getFullYear;
+document.querySelector(
+  ".copy-text"
+).textContent = `©Codemy ${year} the best way to learn code`;
