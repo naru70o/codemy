@@ -407,7 +407,7 @@
 }
 
 .testimonials-imageSection {
-  background-image: url("../img/testimonilas.jpeg");
+  background-image: url("/testimonilas.jpeg");
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -620,7 +620,7 @@
       rgba(31, 19, 101, 0.351),
       rgba(37, 28, 83, 0.384)
     ),
-    url("../img/cta-pic.jpeg");
+    url("/cta-pic.jpeg");
   background-position: center;
 }
 
